@@ -150,3 +150,23 @@ Obtenido de;
   </a>
 
 </p>
+<style>
+  /* Estilos para la animación */
+  details {
+    background-color: #222222;
+    padding: 10px;
+    border: 1px solid #454545;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  summary {
+    cursor: pointer;
+    user-select: none; /* Evitar la selección de texto */
+    transition: color 0.3s ease-out;
+  }
+  summary:hover {
+    color: #007bff; /* Cambiar color al pasar el mouse */
+  }
+</style>
