@@ -1,31 +1,22 @@
 <?php
-# Ifs Anidados
+    # Operadores Lógicos o Booleanos
 if ($_POST) {
-    $valorA=$_POST['Valor1'];
-    $valorB=$_POST['Valor2'];
-
-    $Suma=$valorA+$valorB;#Suma
-    $Resta=$valorA-$valorB;#Resta
-    $Division=$valorA/$valorB;#División
-    $Multiplicacion=$valorA*$valorB;#Multiplicación
-
-    echo
-    "<h1><br>".$Suma.
-    "<br>".$Resta.
-    "<br>".$Division.
-    "<br>".$Multiplicacion.
-    "</h1>";
-    //Con ifs anidados
-    if ($valorA==$valorB) {//== Comparación
-        echo "A -> ".$valorA." es Igual que el valor de b -> ".$valorB;
-        if ($valorA==1) {
-            echo "A -> ".$valorA." es iguala a 1";
-        }
-        if ($valorA==2) {
-            echo "A -> ".$valorA." esigual a 2 ";
-        }
+    $valorA = $_POST['Valor1'];
+    $valorB = $_POST['Valor2'];
+    
+    if (($valorA != $valorB) && ($valorA > $valorB)) {
+        echo "El valor A ($valorA) es diferente y mayor que el valor B ($valorB)<br>";
     }
-}
+    if (($valorA == $valorB) || ($valorA < $valorB)) {
+        echo "El valor A ($valorA) es igual o menor que el valor B ($valorB)<br>";
+    }
+    if ($valorA xor $valorB) {
+        echo "Uno y solo uno de los valores A y B es verdadero<br>";
+    }
+    if (!($valorA == $valorB)) {
+        echo "El valor A ($valorA) es diferente a B ($valorB)<br>";
+    }
+}           // Mas operadores Lógicos: and &&, or ||, xor !,
 ?>
 
 <!DOCTYPE html>
