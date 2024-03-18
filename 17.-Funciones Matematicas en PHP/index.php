@@ -1,5 +1,6 @@
 <?php
-echo "<h1>Ciclo Do While en PHP 🐘</h1>";
+echo "<h1>Funciones matemáticas en PHP 🐘</h1>
+<p> toda Esta ";
 $numeroinicial=0;
 $numerolimite=10;
 echo "<p>El numero final es: $numerolimite 🏁</p>
@@ -8,4 +9,4 @@ do{
     echo "<p>Número de Vuelta: $numeroinicial</p>";
     $numeroinicial++;//Incremento dentro del ciclo do while
 }while($numeroinicial<=$numerolimite);
-?>
+

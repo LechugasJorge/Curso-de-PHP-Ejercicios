@@ -1,49 +1,29 @@
-# 13.- Ciclo Do-While en PHP🐘
+# 13.- Ciclo While en PHP🐘
 
 <details>  <summary><h3> ¿Qué hace este programa? 🤔</h3> </summary>
 
-## CicloDo While ♻ en PHP
+## Ciclo While ♻ en PHP
 
-En PHP, El ciclo do-while en PHP funciona de la siguiente manera:
+### Descripción del Ciclo While en PHP
 
-Primero, el bloque de código dentro del do se ejecuta al menos una vez, sin importar la condición.
+El ciclo `while` en PHP funciona de la siguiente manera:
 
-Después de ejecutar el bloque de código dentro del do, se evalúa la condición del while.
+1. **Evaluación de la Condición**:
+   - Se evalúa una condición booleana.
 
-Si la condición del while es verdadera, el ciclo se repite y vuelve a ejecutar el bloque de código dentro del do.
+2. **Ejecución del Bloque de Código**:
+   - Si la condición es verdadera, se ejecuta el bloque de código asociado al `while`.
 
-El ciclo continuará repitiéndose hasta que la condición del while sea falsa. Una vez que la condición es falsa, el ciclo do-while se detiene y el control pasa al código después del bloque do-while.
+3. **Reevaluación de la Condición**:
+   - Después de ejecutar el bloque de código, se vuelve a evaluar la condición.
 
-Es importante tener en cuenta que, debido a que el bloque de código se ejecuta al menos una vez antes de evaluar la condición, el ciclo do-while es útil cuando se desea que el bloque de código se ejecute al menos una vez, independientemente de si la condición es verdadera o falsa inicialmente. 🔄👨‍💻
+4. **Repetición del Ciclo**:
+   - Si la condición sigue siendo verdadera, el ciclo se repite y el bloque de código se ejecuta nuevamente.
 
-### Funcionamiento
+5. **Finalización del Ciclo**:
+   - Este proceso se repite hasta que la condición se vuelva falsa. En ese momento, el ciclo `while` se detiene y la ejecución del programa continúa con el código que sigue después del bloque `while`.
 
-#### Descripción del código en PHP con Ciclo Do While
-
-Este código en PHP muestra el funcionamiento del ciclo `do-while`. A continuación se describe cada parte:
-
-1. **Título y Mensajes Iniciales**:
-   - Se muestra un título `Ciclo Do While en PHP 🐘` y mensajes iniciales utilizando `echo`.
-
-2. **Inicialización de Variables**:
-   - Se inicializan dos variables `$numeroinicial` y `$numerolimite` con valores `0` y `10` respectivamente.
-
-3. **Mensajes de Información**:
-   - Se muestran mensajes indicando el número final y el número inicial.
-
-4. **Inicio del Ciclo**:
-   - Se muestra un mensaje indicando el inicio del ciclo.
-
-5. **Ciclo Do-While**:
-   - Se inicia el ciclo `do-while`.
-   - Dentro del ciclo, se muestra el número de vuelta actual.
-   - La variable `$numeroinicial` se incrementa en `1` en cada iteración.
-   - El ciclo continúa ejecutándose mientras `$numeroinicial` sea menor o igual que `$numerolimite`.
-
-6. **Finalización del Ciclo**:
-   - Una vez que `$numeroinicial` supera a `$numerolimite`, el ciclo se detiene.
-
-Este código imprimirá los números del `0` al `10`, mostrando el número de vuelta en cada iteración, y luego detendrá la ejecución del ciclo. 🔄👨‍💻
+El ciclo `while` en PHP se utiliza para repetir un bloque de código mientras una condición sea verdadera. Es importante tener cuidado de que la condición pueda volverse falsa en algún momento para evitar bucles infinitos. 🔄👨‍💻
 
 ![alt text](image-1.png)
 
@@ -51,7 +31,7 @@ Este código imprimirá los números del `0` al `10`, mostrando el número de vu
 
 ## Information 🗂
 
-- Title:  `Ciclo Do-While en PHP 🐘`
+- Title:  `Ciclo While en PHP 🐘`
 - Recreación de código por:
   - `Jorge A. Fuentes Jiménez` 👨‍💻 [@Lechu-Dev](https://github.com/LechugasJorge)
 
@@ -68,16 +48,17 @@ Este código imprimirá los números del `0` al `10`, mostrando el número de vu
 
 ```php
 <?php
-echo "<h1>Ciclo Do While en PHP 🐘</h1>";
+echo "<h1>Ciclo While en PHP 🐘</h1>";
 $numeroinicial=0;
 $numerolimite=10;
 echo "<p>El numero final es: $numerolimite 🏁</p>
     <p>El numero Inicial es: $numeroinicial</p><h3>Inicia Ciclo ♻</h3>";
-do{
+    while($numeroinicial<=$numerolimite){
     echo "<p>Número de Vuelta: $numeroinicial</p>";
-    $numeroinicial++;//Incremento dentro del ciclo do while
-}while($numeroinicial<=$numerolimite);
+    $numeroinicial++;//Incremento dentro del ciclo while
+};
 ?>
+
 ```
 
 Se puede copiar y pegar

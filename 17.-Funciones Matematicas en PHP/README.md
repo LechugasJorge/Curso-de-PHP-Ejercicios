@@ -1,8 +1,8 @@
-# 13.- Ciclo Do-While en PHP🐘
+# 13.- Funciones Matemáticas en PHP🐘
 
 <details>  <summary><h3> ¿Qué hace este programa? 🤔</h3> </summary>
 
-## CicloDo While ♻ en PHP
+## Funciones♻ en PHP
 
 En PHP, El ciclo do-while en PHP funciona de la siguiente manera:
 
@@ -18,7 +18,7 @@ Es importante tener en cuenta que, debido a que el bloque de código se ejecuta 
 
 ### Funcionamiento
 
-#### Descripción del código en PHP con Ciclo Do While
+# Descripción del código en PHP con Ciclo Do While
 
 Este código en PHP muestra el funcionamiento del ciclo `do-while`. A continuación se describe cada parte:
 
@@ -53,7 +53,7 @@ Este código imprimirá los números del `0` al `10`, mostrando el número de vu
 
 - Title:  `Ciclo Do-While en PHP 🐘`
 - Recreación de código por:
-  - `Jorge A. Fuentes Jiménez` 👨‍💻 [@Lechu-Dev](https://github.com/LechugasJorge)
+  - `Jorge A. Fuentes Jiménez` 👨‍💻 [@Lechu.Dev](https://github.com/LechugasJorge)
 
 ## Install & Dependence
 
@@ -68,15 +68,10 @@ Este código imprimirá los números del `0` al `10`, mostrando el número de vu
 
 ```php
 <?php
-echo "<h1>Ciclo Do While en PHP 🐘</h1>";
-$numeroinicial=0;
-$numerolimite=10;
-echo "<p>El numero final es: $numerolimite 🏁</p>
-    <p>El numero Inicial es: $numeroinicial</p><h3>Inicia Ciclo ♻</h3>";
-do{
-    echo "<p>Número de Vuelta: $numeroinicial</p>";
-    $numeroinicial++;//Incremento dentro del ciclo do while
-}while($numeroinicial<=$numerolimite);
+echo "<h1>Ciclo For en PHP 🐘</h1>";
+for($numeroInicial=0;$numeroInicial<10;$numeroInicial++){
+    echo "<br>Numero de vuelta ♻ ".$numeroInicial;
+}
 ?>
 ```
 
@@ -94,7 +89,7 @@ Se puede copiar y pegar
 
 1. Descarga y guarda el código PHP en un archivo con extensión `.php`, por ejemplo, `mi_pagina.php`.
 
-2. Coloca este archivo en el directorio raíz de tu servidor web local (por ejemplo, en la carpeta `htdocs` si estás utilizando Apache).
+2. Coloca este archivo en el directorio raíz de tu servidor web local (por ejemplo, en la carpeta `httdocs` si estás utilizando Apache).
 
 3. Abre un navegador web y navega a la dirección donde has alojado el archivo, por ejemplo, `http://localhost/mi_pagina.php`.
 
